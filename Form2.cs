@@ -104,5 +104,34 @@ namespace Treeview_app
         {
             listView1.View = View.Tile;
         }
+
+        private void txbID_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txbID.Text)) { 
+                e.Cancel =true;
+                txbID.Focus();
+                errorProvider1.SetError(txbID, "ID Can't be empty! ");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txbID, "");
+            }
+        }
+
+        private void txbName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txbName.Text))
+            {
+                e.Cancel = true;
+                txbName.Focus();
+                errorProvider1.SetError(txbName, "FirstName Can't be empty! ");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txbName, "");
+            }
+        }
     }
 }

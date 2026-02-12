@@ -51,8 +51,10 @@
             this.rdbTile = new System.Windows.Forms.RadioButton();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.gbView.SuspendLayout();
             this.gbSex.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -138,6 +140,7 @@
             this.txbID.Name = "txbID";
             this.txbID.Size = new System.Drawing.Size(100, 22);
             this.txbID.TabIndex = 7;
+            this.txbID.Validating += new System.ComponentModel.CancelEventHandler(this.txbID_Validating);
             // 
             // txbName
             // 
@@ -145,6 +148,7 @@
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(100, 22);
             this.txbName.TabIndex = 8;
+            this.txbName.Validating += new System.ComponentModel.CancelEventHandler(this.txbName_Validating);
             // 
             // gbView
             // 
@@ -260,6 +264,10 @@
             // 
             this.columnHeader2.Text = "Item";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form2
             // 
             this.AcceptButton = this.btnAdd;
@@ -282,6 +290,7 @@
             this.gbView.PerformLayout();
             this.gbSex.ResumeLayout(false);
             this.gbSex.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +319,6 @@
         private System.Windows.Forms.RadioButton rdbDetails;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
