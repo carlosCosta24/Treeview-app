@@ -30,22 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("carlos");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("ricardo");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Boys", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("karla", 1, 1);
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("aloha", 1, 1);
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Girls", 1, 1, new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("carlos");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("ricardo");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Boys", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("karla", 1, 1);
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("aloha", 1, 1);
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Girls", 1, 1, new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11});
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // imageList1
@@ -62,28 +63,28 @@
             this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(43, 45);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node2";
-            treeNode1.Text = "carlos";
-            treeNode2.Name = "Node3";
-            treeNode2.Text = "ricardo";
-            treeNode3.Name = "Node0";
-            treeNode3.SelectedImageIndex = 0;
-            treeNode3.Text = "Boys";
-            treeNode4.ImageIndex = 1;
-            treeNode4.Name = "Node4";
-            treeNode4.SelectedImageIndex = 1;
-            treeNode4.Text = "karla";
-            treeNode5.ImageIndex = 1;
-            treeNode5.Name = "Node5";
-            treeNode5.SelectedImageIndex = 1;
-            treeNode5.Text = "aloha";
-            treeNode6.ImageIndex = 1;
-            treeNode6.Name = "Node1";
-            treeNode6.SelectedImageIndex = 1;
-            treeNode6.Text = "Girls";
+            treeNode7.Name = "Node2";
+            treeNode7.Text = "carlos";
+            treeNode8.Name = "Node3";
+            treeNode8.Text = "ricardo";
+            treeNode9.Name = "Node0";
+            treeNode9.SelectedImageIndex = 0;
+            treeNode9.Text = "Boys";
+            treeNode10.ImageIndex = 1;
+            treeNode10.Name = "Node4";
+            treeNode10.SelectedImageIndex = 1;
+            treeNode10.Text = "karla";
+            treeNode11.ImageIndex = 1;
+            treeNode11.Name = "Node5";
+            treeNode11.SelectedImageIndex = 1;
+            treeNode11.Text = "aloha";
+            treeNode12.ImageIndex = 1;
+            treeNode12.Name = "Node1";
+            treeNode12.SelectedImageIndex = 1;
+            treeNode12.Text = "Girls";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode6});
+            treeNode9,
+            treeNode12});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(429, 272);
             this.treeView1.TabIndex = 0;
@@ -127,11 +128,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(179, 526);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Open list";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 608);
+            this.ClientSize = new System.Drawing.Size(517, 608);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -153,6 +165,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

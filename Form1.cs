@@ -79,5 +79,11 @@ namespace Treeview_app
         {
             progressBar1.Value = 0;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form ListView = new Form2();
+            ListView.ShowDialog();
+        }
     }
 }
