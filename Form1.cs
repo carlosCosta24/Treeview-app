@@ -85,5 +85,11 @@ namespace Treeview_app
             Form ListView = new Form2();
             ListView.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form TrackBar = new Form3();
+            TrackBar.ShowDialog();  
+        }
     }
 }
